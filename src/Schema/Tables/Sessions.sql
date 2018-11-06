@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[Sessions]
+(
+	[UserId] INT NOT NULL PRIMARY KEY, 
+    [Token] VARCHAR(50) NOT NULL, 
+    [ExpiredDate] DATETIME NOT NULL
+
+	CONSTRAINT PK_UserSessions PRIMARY KEY CLUSTERED ( UserId )
+)

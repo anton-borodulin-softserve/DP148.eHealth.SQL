@@ -69,8 +69,15 @@
   <ItemGroup>
     <Build Include="Tables\UsersLogin.sql" />
     <Build Include="Tables\Roles.sql" />
+    <Build Include="Tables\UserData.sql" />
+    <Build Include="Tables\DoctorView.sql" />
+    <Build Include="Tables\Secrets.sql" />
+    <Build Include="Tables\Sessions.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="StaticData\static_UserLogin.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Schema.refactorlog" />
   </ItemGroup>
 </Project>
