@@ -1,4 +1,4 @@
-﻿CREATE VIEW [dbo].[DoctorView]
+﻿CREATE VIEW [dbo].[DoctorsView]
 	AS SELECT UserId, FirstName, LastName 
 	FROM [UserData]
 	WHERE UserId IN (SELECT Id FROM UsersLogin WHERE RoleId = 2)
