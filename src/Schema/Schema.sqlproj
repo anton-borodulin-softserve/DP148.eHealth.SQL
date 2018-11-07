@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{de183312-8f1e-4c5e-8b20-0c60ce2e7057}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -62,22 +62,19 @@
     <Folder Include="Triggers" />
     <Folder Include="Views" />
     <Folder Include="SchemaConversion" />
+    <Folder Include="Tables\Patient" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SchemaConversion\ClientSchemaConversion.sql" />
-    <None Include="StaticData\static_Secrets.sql" />
-    <None Include="StaticData\static_UsersData.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\UsersLogin.sql" />
     <Build Include="Tables\Roles.sql" />
-    <Build Include="Tables\Secrets.sql" />
-    <Build Include="Tables\Sessions.sql" />
-    <Build Include="Views\DoctorsView.sql" />
-    <Build Include="Tables\UsersData.sql" />
+    <Build Include="Tables\Patient\Images.sql" />
+    <Build Include="Tables\Patient\PatientInfo.sql" />
   </ItemGroup>
   <ItemGroup>
-    <PostDeploy Include="StaticData\static_UsersLogin.sql" />
+    <PostDeploy Include="StaticData\static_UserLogin.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Schema.refactorlog" />
