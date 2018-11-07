@@ -68,6 +68,8 @@
     <None Include="SchemaConversion\ClientSchemaConversion.sql" />
   </ItemGroup>
   <ItemGroup>
+    <Build Include="Tables\UsersLogin.sql" />
+    <Build Include="Tables\Roles.sql" />
     <Build Include="Tables\Patient\Images.sql" />
     <Build Include="Tables\Patient\PatientInfo.sql" />
   </ItemGroup>
