@@ -70,12 +70,12 @@
     <Build Include="Tables\UsersLogin.sql" />
     <Build Include="Tables\Roles.sql" />
     <Build Include="Tables\UserData.sql" />
-    <Build Include="Tables\DoctorView.sql" />
     <Build Include="Tables\Secrets.sql" />
     <Build Include="Tables\Sessions.sql" />
+    <Build Include="Views\DoctorsView.sql" />
   </ItemGroup>
   <ItemGroup>
-    <PostDeploy Include="StaticData\static_UserLogin.sql" />
+    <PostDeploy Include="StaticData\static_Datas.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Schema.refactorlog" />
