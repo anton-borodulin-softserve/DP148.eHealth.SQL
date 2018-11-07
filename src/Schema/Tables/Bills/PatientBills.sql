@@ -1,11 +1,12 @@
 ﻿CREATE TABLE [dbo].[PatientBills]
 (
-	[Id] INT NOT NULL IDENTITY(1, 1),
+	[PatientBillId] INT NOT NULL IDENTITY(1, 1),
 	[PatientId] INT NOT NULL,
 	[BillId] INT NOT NULL,
+	[IsDeleted] BIT NOT NULL DEFAULT 0,
 
-	CONSTRAINT PK_PatientBills PRIMARY KEY CLUSTERED ( [Id] ),
-	CONSTRAINT FK_PatientBills_PatientInfo FOREIGN KEY ( [PatientId] ) REFERENCES PatientInfo( [Id] ),
-	CONSTRAINT FK_PatientBills_Bills FOREIGN KEY ( [BillId] ) REFERENCES Bills( [Id] ),
+	CONSTRAINT PK_PatientBills PRIMARY KEY CLUSTERED ( [PatientBillId] ),
+	CONSTRAINT FK_PatientBills_PatientInfo FOREIGN KEY ( [PatientId] ) REFERENCES PatientInfo( [PatientId] ),
+	CONSTRAINT FK_PatientBills_Bills FOREIGN KEY ( [BillId] ) REFERENCES Bills( [BillId] ),
 	CONSTRAINT UC_PatientBills UNIQUE ( [PatientId], [BillId] )
 )
