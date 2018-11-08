@@ -6,3 +6,7 @@
 
 :r ..\StaticData\static_Roles.sql
 :r ..\StaticData\static_UsersLogin.sql
+:r ..\StaticData\static_Allergies.sql
+:r ..\StaticData\static_AllergySymptom.sql
+:r ..\StaticData\static_PatientAllergy.sql
+:r ..\StaticData\static_Symptoms.sql
