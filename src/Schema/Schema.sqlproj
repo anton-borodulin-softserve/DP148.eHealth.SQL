@@ -63,6 +63,7 @@
     <Folder Include="Views" />
     <Folder Include="SchemaConversion" />
     <Folder Include="Scripts" />
+    <Folder Include="Tables\Appointments" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SchemaConversion\ClientSchemaConversion.sql" />
@@ -71,11 +72,13 @@
     <Build Include="Tables\UsersLogin.sql" />
     <Build Include="Tables\Roles.sql" />
     <None Include="StaticData\static_Roles.sql" />
+    <Build Include="Tables\Appointments\Appointments.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="StaticData\static_UsersLogin.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\PostDeployment.sql" />
+    <None Include="StaticData\static_Appointments.sql" />
   </ItemGroup>
 </Project>
