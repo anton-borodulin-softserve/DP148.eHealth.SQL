@@ -62,7 +62,11 @@
     <Folder Include="Triggers" />
     <Folder Include="Views" />
     <Folder Include="SchemaConversion" />
+<<<<<<< HEAD
     <Folder Include="Tables\Patient" />
+=======
+    <Folder Include="Scripts" />
+>>>>>>> faae463b73737e294014b2c5d7a7decf2b9208f3
   </ItemGroup>
   <ItemGroup>
     <None Include="SchemaConversion\ClientSchemaConversion.sql" />
@@ -70,11 +74,18 @@
   <ItemGroup>
     <Build Include="Tables\UsersLogin.sql" />
     <Build Include="Tables\Roles.sql" />
+<<<<<<< HEAD
     <Build Include="Tables\Patient\Images.sql" />
     <Build Include="Tables\Patient\PatientInfo.sql" />
+=======
+    <None Include="StaticData\static_Roles.sql" />
+>>>>>>> faae463b73737e294014b2c5d7a7decf2b9208f3
   </ItemGroup>
   <ItemGroup>
-    <PostDeploy Include="StaticData\static_UserLogin.sql" />
+    <None Include="StaticData\static_UsersLogin.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\PostDeployment.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Schema.refactorlog" />
