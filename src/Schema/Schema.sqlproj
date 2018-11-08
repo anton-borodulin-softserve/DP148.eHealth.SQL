@@ -70,9 +70,10 @@
   <ItemGroup>
     <Build Include="Tables\UsersLogin.sql" />
     <Build Include="Tables\Roles.sql" />
+    <None Include="StaticData\static_Roles.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="StaticData\static_UserLogin.sql" />
+    <None Include="StaticData\static_UsersLogin.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\PostDeployment.sql" />
