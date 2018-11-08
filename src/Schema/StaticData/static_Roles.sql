@@ -4,8 +4,8 @@ IF ( NOT EXISTS(SELECT *
                 FROM   [dbo].[Roles]) )
   BEGIN
       INSERT INTO [dbo].[Roles]
-                  (Title)
-      VALUES      ('Test')
+                  ([Title])
+      VALUES      ('Test');
   END
 
 GO
