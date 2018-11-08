@@ -6,3 +6,5 @@
 
 :r ..\StaticData\static_Roles.sql
 :r ..\StaticData\static_UsersLogin.sql
+:r ..\StaticData\static_Images.sql
+:r ..\StaticData\static_PatientInfo.sql
