@@ -62,6 +62,7 @@
     <Folder Include="Triggers" />
     <Folder Include="Views" />
     <Folder Include="SchemaConversion" />
+    <Folder Include="Scripts" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SchemaConversion\ClientSchemaConversion.sql" />
@@ -69,8 +70,12 @@
   <ItemGroup>
     <Build Include="Tables\UsersLogin.sql" />
     <Build Include="Tables\Roles.sql" />
+    <None Include="StaticData\static_Roles.sql" />
   </ItemGroup>
   <ItemGroup>
-    <PostDeploy Include="StaticData\static_UserLogin.sql" />
+    <None Include="StaticData\static_UsersLogin.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\PostDeployment.sql" />
   </ItemGroup>
 </Project>
