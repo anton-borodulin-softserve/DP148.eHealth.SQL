@@ -63,6 +63,7 @@
     <Folder Include="Views" />
     <Folder Include="SchemaConversion" />
     <Folder Include="Scripts" />
+    <Folder Include="Tables\Allergies" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SchemaConversion\ClientSchemaConversion.sql" />
@@ -71,6 +72,14 @@
     <Build Include="Tables\UsersLogin.sql" />
     <Build Include="Tables\Roles.sql" />
     <None Include="StaticData\static_Roles.sql" />
+    <Build Include="Tables\Allergies\Allergies.sql" />
+    <Build Include="Tables\Allergies\AllergySymptom.sql" />
+    <Build Include="Tables\Allergies\PatientAllergy.sql" />
+    <Build Include="Tables\Allergies\Symptoms.sql" />
+    <None Include="StaticData\static_Allergies.sql" />
+    <None Include="StaticData\static_AllergySymptom.sql" />
+    <None Include="StaticData\static_PatientAllergy.sql" />
+    <None Include="StaticData\static_Symptoms.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="StaticData\static_UsersLogin.sql" />
