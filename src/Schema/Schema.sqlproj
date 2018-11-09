@@ -67,6 +67,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="SchemaConversion\ClientSchemaConversion.sql" />
+    <None Include="StaticData\static_Medications.sql" />
+    <None Include="StaticData\static_PatientMediacations.sql" />
+    <None Include="StaticData\static_TempPatientInfo.sql" />
+    <None Include="StaticData\static_TempUsersData.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\UsersLogin.sql" />
