@@ -16,5 +16,5 @@
 	CONSTRAINT PK_PatientInfo PRIMARY KEY CLUSTERED ( [PatientId] )
 	CONSTRAINT UC_Person UNIQUE( [FirstName], [LastName], [BirthDate] )
 	CONSTRAINT UC_Email UNIQUE( [Email] )
-	CONSTRAINT FK_Images_Id FOREIGN KEY ( [ImageId] ) REFERENCES dbo.Images( [ImageId] )
+	CONSTRAINT FK_Images_Id FOREIGN KEY ( [ImageId] ) REFERENCES [dbo].[Images]( [ImageId] )
 )
