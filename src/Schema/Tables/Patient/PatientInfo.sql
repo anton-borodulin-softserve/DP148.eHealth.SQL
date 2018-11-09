@@ -7,7 +7,7 @@
 	[City] NVARCHAR(50) NULL, 
 	[Address] NVARCHAR(MAX) NULL, 
 	[BirthDate] DATE NOT NULL, 
-	[Phone] VARCHAR(13) NULL, 
+	[Phone] VARCHAR(12) NULL, 
 	[Gender] TINYINT NULL,
 	[Email] VARCHAR(50) NULL,
 	[ImageId] INT NULL,
