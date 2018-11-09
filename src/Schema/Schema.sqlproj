@@ -74,6 +74,8 @@
     <Build Include="Tables\Roles.sql" />
     <Build Include="Tables\Patient\Images.sql" />
     <Build Include="Tables\Patient\PatientInfo.sql" />
+    <None Include="StaticData\static_Roles.sql" />
+    <None Include="StaticData\static_UserLogin.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="StaticData\static_Images.sql" />
