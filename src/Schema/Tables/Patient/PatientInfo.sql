@@ -8,7 +8,7 @@
 	[Address] NVARCHAR(MAX) NULL, 
 	[BirthDate] DATE NOT NULL, 
 	[Phone] VARCHAR(13) NULL, 
-	[Gender] BIT NULL,
+	[Gender] TINYINT NULL,
 	[Email] VARCHAR(50) NULL,
 	[ImageId] INT NULL,
 	[IsDeleted] BIT NOT NULL DEFAULT 0
