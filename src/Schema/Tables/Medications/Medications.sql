@@ -7,7 +7,7 @@
     [Dose] SMALLINT NOT NULL,
     [Direction] NVARCHAR(50) NOT NULL,
     [Instruction] NVARCHAR(MAX) NOT NULL,
-    [IsDeleted] BIT NOT NULL,
+    [IsDeleted] BIT NOT NULL DEFAULT 0,
 
     CONSTRAINT PK_Medication PRIMARY KEY CLUSTERED ( [MedicationId] ),
     CONSTRAINT UC_Medication UNIQUE ( [LatinName], [Type], [Dose] ),
