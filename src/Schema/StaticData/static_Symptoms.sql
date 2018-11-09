@@ -4,7 +4,7 @@ IF ( NOT EXISTS(SELECT *
       INSERT INTO [dbo].[Symptoms]
            ([Naming], [IsDeleted])
       VALUES
-           ('Test', 0)
+           ('Test' , 0)
   END
 
 GO
