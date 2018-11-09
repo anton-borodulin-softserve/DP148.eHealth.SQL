@@ -63,6 +63,7 @@
     <Folder Include="Views" />
     <Folder Include="SchemaConversion" />
     <Folder Include="Scripts" />
+    <Folder Include="Tables\Medications" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SchemaConversion\ClientSchemaConversion.sql" />
@@ -71,11 +72,19 @@
     <Build Include="Tables\UsersLogin.sql" />
     <Build Include="Tables\Roles.sql" />
     <None Include="StaticData\static_Roles.sql" />
+    <Build Include="Tables\Medications\Medications.sql" />
+    <Build Include="Tables\Medications\PatientInfo.sql" />
+    <Build Include="Tables\Medications\PatientMedications.sql" />
+    <Build Include="Tables\Medications\UsersData.sql" />
+    <Build Include="Views\DoctorsView.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="StaticData\static_UsersLogin.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\PostDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Schema.refactorlog" />
   </ItemGroup>
 </Project>
