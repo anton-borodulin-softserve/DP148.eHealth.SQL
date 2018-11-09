@@ -1,6 +1,8 @@
 ﻿CREATE TABLE [dbo].[UsersData]
 (
-    [UserId] INT NOT NULL PRIMARY KEY,
-    [FirstName] NCHAR(10) NULL,
-    [LastName] NCHAR(10) NULL
+    [UserId] INT NOT NULL IDENTITY(1, 1),
+    [FirstName] NVARCHAR(50) NOT NULL,
+    [LastName] NVARCHAR(50) 
+
+    CONSTRAINT PK_UserData PRIMARY KEY CLUSTERED ( UserId ) NOT NULL
 )

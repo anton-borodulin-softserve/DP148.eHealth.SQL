@@ -1,7 +1,7 @@
 ﻿CREATE VIEW [dbo].[DoctorsView] 
 AS 
-  SELECT USERID, 
-         FIRSTNAME, 
-         LASTNAME 
+  SELECT UserId, 
+         FirstName, 
+         LastName 
   FROM   [dbo].USERSDATA 
   WHERE  USERID = 2; 

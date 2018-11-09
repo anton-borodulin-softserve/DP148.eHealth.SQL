@@ -76,7 +76,7 @@
     <Build Include="Tables\Medications\PatientInfo.sql" />
     <Build Include="Tables\Medications\PatientMedications.sql" />
     <Build Include="Tables\Medications\UsersData.sql" />
-    <Build Include="Views\DoctorsView.sql" />
+    <Build Include="Tables\Medications\DoctorsView.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="StaticData\static_UsersLogin.sql" />
