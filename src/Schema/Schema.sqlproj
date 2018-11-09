@@ -69,18 +69,13 @@
     <None Include="SchemaConversion\ClientSchemaConversion.sql" />
     <None Include="StaticData\static_Medications.sql" />
     <None Include="StaticData\static_PatientMediacations.sql" />
-    <None Include="StaticData\static_TempPatientInfo.sql" />
-    <None Include="StaticData\static_TempUsersData.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\UsersLogin.sql" />
     <Build Include="Tables\Roles.sql" />
     <None Include="StaticData\static_Roles.sql" />
     <Build Include="Tables\Medications\Medications.sql" />
-    <Build Include="Tables\Medications\PatientInfo.sql" />
     <Build Include="Tables\Medications\PatientMedications.sql" />
-    <Build Include="Tables\Medications\UsersData.sql" />
-    <Build Include="Tables\Medications\DoctorsView.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="StaticData\static_UsersLogin.sql" />
