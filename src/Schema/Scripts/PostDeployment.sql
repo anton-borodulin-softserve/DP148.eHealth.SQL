@@ -14,6 +14,8 @@
 :r ..\StaticData\static_AllergySymptom.sql
 :r ..\StaticData\static_Medications.sql
 :r ..\StaticData\static_PatientMediacations.sql
+:r ..\StaticData\static_Secrets.sql
+:r ..\StaticData\static_UsersData.sql
 
 
 
