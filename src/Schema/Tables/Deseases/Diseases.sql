@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[Diseases]
 (
 	[DiseaseId] INT NOT NULL IDENTITY(1, 1),
-	[Name] NCHAR(100) NOT NULL,
+	[Name] NVARCHAR(100) NOT NULL,
 	[CategoryId] INT NOT NULL,
 	[Description] NVARCHAR(MAX) NULL,
 	[IsDeleted] BIT NOT NULL DEFAULT 0,
