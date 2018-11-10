@@ -61,15 +61,16 @@
     <Folder Include="Tables" />
     <Folder Include="Triggers" />
     <Folder Include="Views" />
-    <Folder Include="SchemaConversion" /> 
+    <Folder Include="SchemaConversion" />
     <Folder Include="Scripts" />
     <Folder Include="Tables\Deseases" />
-	<Folder Include="Tables\Patient" />
-	<Folder Include="Tables\Allergies" />
-	<Folder Include="Tables\Medications" />
+    <Folder Include="Tables\Patient" />
+    <Folder Include="Tables\Allergies" />
+    <Folder Include="Tables\Medications" />
+    <Folder Include="Tables\Users" />
   </ItemGroup>
   <ItemGroup>
-	<None Include="StaticData\static_Medications.sql" />
+    <None Include="StaticData\static_Medications.sql" />
     <None Include="StaticData\static_PatientMediacations.sql" />
     <None Include="SchemaConversion\ClientSchemaConversion.sql" />
     <None Include="StaticData\static_DiseaseCategories.sql" />
@@ -94,8 +95,18 @@
     <None Include="StaticData\static_AllergySymptom.sql" />
     <None Include="StaticData\static_PatientAllergy.sql" />
     <None Include="StaticData\static_Symptoms.sql" />
-	<Build Include="Tables\Medications\Medications.sql" />
+    <Build Include="Tables\Medications\Medications.sql" />
     <Build Include="Tables\Medications\PatientMedications.sql" />
+    <Build Include="Tables\Users\Roles.sql" />
+    <Build Include="Tables\Users\Secrets.sql" />
+    <Build Include="Tables\Users\Sessions.sql" />
+    <Build Include="Tables\Users\UsersData.sql" />
+    <Build Include="Tables\Users\UsersLogin.sql" />
+    <Build Include="Views\DoctorsView.sql" />
+    <Build Include="StaticData\static_Secrets.sql" />
+    <Build Include="StaticData\static_Logins.sql" />
+    <Build Include="StaticData\static_Sessions.sql" />
+    <Build Include="StaticData\static_UsersData.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="StaticData\static_Images.sql" />
