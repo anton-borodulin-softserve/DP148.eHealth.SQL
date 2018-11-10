@@ -79,8 +79,6 @@
     <None Include="StaticData\static_PatientInfo.sql" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Tables\UsersLogin.sql" />
-    <Build Include="Tables\Roles.sql" />
     <Build Include="Tables\Patient\Images.sql" />
     <Build Include="Tables\Patient\PatientInfo.sql" />
     <None Include="StaticData\static_Roles.sql" />
@@ -103,10 +101,10 @@
     <Build Include="Tables\Users\UsersData.sql" />
     <Build Include="Tables\Users\UsersLogin.sql" />
     <Build Include="Views\DoctorsView.sql" />
-    <Build Include="StaticData\static_Secrets.sql" />
-    <Build Include="StaticData\static_Logins.sql" />
-    <Build Include="StaticData\static_Sessions.sql" />
-    <Build Include="StaticData\static_UsersData.sql" />
+    <None Include="StaticData\static_Secrets.sql" />
+    <None Include="StaticData\static_Logins.sql" />
+    <None Include="StaticData\static_Sessions.sql" />
+    <None Include="StaticData\static_UsersData.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="StaticData\static_Images.sql" />
