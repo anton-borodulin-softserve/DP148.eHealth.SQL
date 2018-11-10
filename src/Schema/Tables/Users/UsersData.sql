@@ -10,7 +10,7 @@
      [Adress]      NVARCHAR(100) NULL, 
      [Gender]      TINYINT NOT NULL DEFAULT 0, 
      [Email]       VARCHAR(50) NULL,
-	 [IsDeleted] BIT NOT NULL DEFAULT 0
+	 [IsDeleted]   BIT NOT NULL DEFAULT 0
 
      CONSTRAINT PK_UsersData PRIMARY KEY CLUSTERED ( [UserId] ) 
 	 CONSTRAINT UC_UsersEmail UNIQUE( [Email] )
