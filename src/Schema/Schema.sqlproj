@@ -94,9 +94,9 @@
     <Build Include="Tables\Users\Sessions.sql" />
     <Build Include="Tables\Users\UsersData.sql" />
     <Build Include="Tables\Users\UsersLogin.sql" />
-    <Build Include="StaticData\static_Secrets.sql" />
-    <Build Include="StaticData\static_UserLogin.sql" />
-    <Build Include="StaticData\static_UsersData.sql" />
+    <None Include="StaticData\static_Secrets.sql" />
+    <None Include="StaticData\static_UserLogin.sql" />
+    <None Include="StaticData\static_UsersData.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="StaticData\static_Images.sql" />
