@@ -4,7 +4,7 @@ IF ( NOT EXISTS(SELECT *
                 FROM [dbo].[PatientMedications]) )
 
 BEGIN
-    INSERT INTO [DBO].[PatientMedications]
+    INSERT INTO [dbo].[PatientMedications]
         (
             [PatientId]   ,
             [UserId]      ,
@@ -13,9 +13,9 @@ BEGIN
         )
         VALUES
         (
-            '1',
-            '1',
-            '1',
+             1,
+             1,
+             1,
             '14 days'
         );
 END

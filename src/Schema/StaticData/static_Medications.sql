@@ -3,7 +3,7 @@
 IF ( NOT EXISTS(SELECT *
                 FROM   [dbo].[Medications]) )
 BEGIN
-    INSERT INTO [DBO].[Medications]
+    INSERT INTO [dbo].[Medications]
         (
             [Name]     ,
             [LatinName],

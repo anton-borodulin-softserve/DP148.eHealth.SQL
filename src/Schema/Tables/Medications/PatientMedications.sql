@@ -4,25 +4,16 @@
     [PatientId]            INT NOT NULL,
     [UserId]               INT NOT NULL,
     [MedicationId]         BIGINT NOT NULL,
-    [AssignmentDate]       DATE NOT NULL DEFAULT Getdate(),
+    [AssignmentDate]       DATE NOT NULL DEFAULT GETDATE(),
     [Duration]             NVARCHAR(20) NOT NULL,
-    [Notes]                NVARCHAR(max) NULL,
-    -- Сurrent treatment by medicine equals 0, finished equals 1.
-    [Status]               BIT NOT NULL DEFAULT 0
+    [Notes]                NVARCHAR(MAX) NULL,
+    [IsFinished]           BIT NOT NULL DEFAULT 0,
+    [IsDeleted]            BIT NOT NULL DEFAULT 0
 
-    CONSTRAINT PK_PatientMedications
-    PRIMARY KEY CLUSTERED ( [PatientMedicationsId] ),
-
-    -- This constraint won't available
-    -- without merging which
-    -- gives access to PatientIngo table.
+    CONSTRAINT PK_PatientMedications PRIMARY KEY CLUSTERED ( [PatientMedicationsId] ),
+    -- TODO: Uncomment when PatientInfo table will be available
     /*
-    CONSTRAINT FK_PatientMedications_PatientsInfo
-    FOREIGN KEY ( [PatientId] )
-    REFERENCES [dbo].[PatientInfo]( [PatientId] ),
+    CONSTRAINT FK_PatientMedications_PatientsInfo FOREIGN KEY ( [PatientId] ) REFERENCES [dbo].[PatientInfo]( [PatientId] ),
     */
-
-    CONSTRAINT FK_PatientMedications_Medications
-    FOREIGN KEY ( [MedicationId] )
-    REFERENCES dbo.[Medications]( [MedicationId] )
+    CONSTRAINT FK_PatientMedications_Medications FOREIGN KEY ( [MedicationId] ) REFERENCES [dbo].[Medications]( [MedicationId] )
 )
