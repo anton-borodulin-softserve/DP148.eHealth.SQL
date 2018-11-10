@@ -4,8 +4,8 @@ IF ( NOT EXISTS(SELECT *
                 FROM   [dbo].[Appointments]) )
   BEGIN
       INSERT INTO [dbo].[Appointments]
-                  ([PatientId], [UserId], [Time])
-      VALUES      (1, 1, '00:00:00')
+                  ([PatientId], [UserId], [Time], [AppointmentBillId])
+      VALUES      (1, 1, '00:00:00', 1)
   END
 
 GO

@@ -67,12 +67,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="SchemaConversion\ClientSchemaConversion.sql" />
+    <None Include="StaticData\static_AppointmentBills.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\UsersLogin.sql" />
     <Build Include="Tables\Roles.sql" />
     <None Include="StaticData\static_Roles.sql" />
     <Build Include="Tables\Appointments\Appointments.sql" />
+    <Build Include="Tables\Appointments\AppointmentBill.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="StaticData\static_UsersLogin.sql" />

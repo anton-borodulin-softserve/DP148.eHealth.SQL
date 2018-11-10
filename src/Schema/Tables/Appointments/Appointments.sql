@@ -1,16 +1,21 @@
-﻿CREATE TABLE [dbo].[Appointments]
-(
-	[AppointmentId] INT NOT NULL IDENTITY(1, 1), 
-    [PatientId] INT NOT NULL, 
-    [UserId] INT NOT NULL, 
-    [Data] DATE NOT NULL DEFAULT GETDATA(),
-    [Time] TIME NOT NULL,
-    [Duration] INT NOT NULL DEFAULT 15,   
-	[Purpose] nvarchar(20) NOT NULL CHECK ([Purpose] IN('inspection', 'procedure')) DEFAULT 'inspection',
-	[IsDeleted] BIT NOT NULL DEFAULT 0,
+﻿CREATE TABLE [dbo].[Appointments] 
+  ( 
+     [AppointmentId]     INT NOT NULL IDENTITY(1, 1), 
+     [PatientId]         INT NOT NULL, 
+     [UserId]            INT NOT NULL, 
+     [AppointmentDate]   DATE NOT NULL DEFAULT Getdate(), 
+     [AppointmentTime]   TIME NOT NULL, 
+     [Duration]          INT NOT NULL DEFAULT 15, 
+     [Purpose]           NVARCHAR(50) NOT NULL DEFAULT ('inspection'), 
+     [AppointmentBillId] INT NOT NULL, 
 
-    CONSTRAINT PK_Appointments PRIMARY KEY CLUSTERED ( [AppointmentId] ),
-	CONSTRAINT FK_Appointments_Patients FOREIGN KEY ( [PatientId] ) REFERENCES PatientInfo( [PatientId] ),
-	CONSTRAINT FK_Appointments_Users FOREIGN KEY ( [UserId] ) REFERENCES Users( [UserId] ),
-	CONSTRAINT CHK_Duration CHECK ( [Duration] >= 5 )
-)
+     CONSTRAINT PK_Appointment PRIMARY KEY CLUSTERED ( [AppointmentId] ), 
+     CONSTRAINT FK_Appointments_PatientInfo FOREIGN KEY ( [PatientId] ) 
+     REFERENCES [PatientInfo]( [PatientId] ), 
+     CONSTRAINT FK_Appointments_DoctorView FOREIGN KEY ( [UserId] ) REFERENCES 
+     [DoctorView]( [UserId] ), 
+     CONSTRAINT FK_Appointments_AppointmentBill FOREIGN KEY ( 
+     [AppointmentBillId]) REFERENCES [AppointmentBill]([AppointmentBillId]), 
+     CONSTRAINT CHK_DURATION CHECK ( [Duration] >= 5 ), 
+     CONSTRAINT CHK_PURPOSE CHECK ([Purpose] IN('inspection', 'procedure')), 
+  )
