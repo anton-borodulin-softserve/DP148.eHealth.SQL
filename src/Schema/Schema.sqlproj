@@ -61,12 +61,15 @@
     <Folder Include="Tables" />
     <Folder Include="Triggers" />
     <Folder Include="Views" />
-    <Folder Include="SchemaConversion" />
-    <Folder Include="Tables\Patient" />
+    <Folder Include="SchemaConversion" /> 
     <Folder Include="Scripts" />
-    <Folder Include="Tables\Allergies" />
+	<Folder Include="Tables\Patient" />
+	<Folder Include="Tables\Allergies" />
+	<Folder Include="Tables\Medications" />
   </ItemGroup>
   <ItemGroup>
+	<None Include="StaticData\static_Medications.sql" />
+    <None Include="StaticData\static_PatientMediacations.sql" />
     <None Include="SchemaConversion\ClientSchemaConversion.sql" />
     <None Include="StaticData\static_PatientInfo.sql" />
   </ItemGroup>
@@ -84,6 +87,8 @@
     <None Include="StaticData\static_AllergySymptom.sql" />
     <None Include="StaticData\static_PatientAllergy.sql" />
     <None Include="StaticData\static_Symptoms.sql" />
+	<Build Include="Tables\Medications\Medications.sql" />
+    <Build Include="Tables\Medications\PatientMedications.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="StaticData\static_Images.sql" />
