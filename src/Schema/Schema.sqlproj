@@ -62,15 +62,19 @@
     <Folder Include="Triggers" />
     <Folder Include="Views" />
     <Folder Include="SchemaConversion" />
+    <Folder Include="Tables\Patient" />
     <Folder Include="Scripts" />
     <Folder Include="Tables\Allergies" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SchemaConversion\ClientSchemaConversion.sql" />
+    <None Include="StaticData\static_PatientInfo.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\UsersLogin.sql" />
     <Build Include="Tables\Roles.sql" />
+    <Build Include="Tables\Patient\Images.sql" />
+    <Build Include="Tables\Patient\PatientInfo.sql" />
     <None Include="StaticData\static_Roles.sql" />
     <Build Include="Tables\Allergies\Allergies.sql" />
     <Build Include="Tables\Allergies\AllergySymptom.sql" />
@@ -82,9 +86,12 @@
     <None Include="StaticData\static_Symptoms.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="StaticData\static_UsersLogin.sql" />
+    <None Include="StaticData\static_Images.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\PostDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Schema.refactorlog" />
   </ItemGroup>
 </Project>
