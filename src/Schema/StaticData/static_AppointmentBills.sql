@@ -4,6 +4,6 @@ IF ( NOT EXISTS(SELECT *
                 FROM   [dbo].[AppointmentBill]) )
   BEGIN
       INSERT INTO [dbo].[AppointmentBill]
-                  ([InvoiceNumber], [Amount])
-      VALUES      ('00000000-0000-0000-0000-000000000000', 100)
+                  ([Amount])
+      VALUES      (100)
   END
