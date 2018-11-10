@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{de183312-8f1e-4c5e-8b20-0c60ce2e7057}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -76,7 +76,6 @@
     <Build Include="Tables\Patient\Images.sql" />
     <Build Include="Tables\Patient\PatientInfo.sql" />
     <None Include="StaticData\static_Roles.sql" />
-<<<<<<< HEAD
     <Build Include="Tables\Allergies\Allergies.sql" />
     <Build Include="Tables\Allergies\AllergySymptom.sql" />
     <Build Include="Tables\Allergies\PatientAllergy.sql" />
@@ -85,9 +84,6 @@
     <None Include="StaticData\static_AllergySymptom.sql" />
     <None Include="StaticData\static_PatientAllergy.sql" />
     <None Include="StaticData\static_Symptoms.sql" />
-=======
-    <None Include="StaticData\static_UserLogin.sql" />
->>>>>>> master
   </ItemGroup>
   <ItemGroup>
     <None Include="StaticData\static_Images.sql" />
