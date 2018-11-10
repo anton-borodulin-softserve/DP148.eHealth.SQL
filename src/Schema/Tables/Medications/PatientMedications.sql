@@ -11,9 +11,6 @@
     [IsDeleted]            BIT NOT NULL DEFAULT 0
 
     CONSTRAINT PK_PatientMedications PRIMARY KEY CLUSTERED ( [PatientMedicationsId] ),
-    -- TODO: Uncomment when PatientInfo table will be available
-    /*
     CONSTRAINT FK_PatientMedications_PatientsInfo FOREIGN KEY ( [PatientId] ) REFERENCES [dbo].[PatientInfo]( [PatientId] ),
-    */
     CONSTRAINT FK_PatientMedications_Medications FOREIGN KEY ( [MedicationId] ) REFERENCES [dbo].[Medications]( [MedicationId] )
 )
