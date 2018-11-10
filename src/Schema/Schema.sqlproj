@@ -63,31 +63,14 @@
     <Folder Include="Views" />
     <Folder Include="SchemaConversion" />
     <Folder Include="Scripts" />
-    <Folder Include="Tables\Patient" />
-    <Folder Include="Tables\Allergies" />
-    <Folder Include="Tables\Medications" />
     <Folder Include="Tables\Users" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="StaticData\static_Medications.sql" />
-    <None Include="StaticData\static_PatientMediacations.sql" />
     <None Include="SchemaConversion\ClientSchemaConversion.sql" />
-    <None Include="StaticData\static_PatientInfo.sql" />
+    <None Include="StaticData\static_Sessions.sql" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Tables\Patient\Images.sql" />
-    <Build Include="Tables\Patient\PatientInfo.sql" />
     <None Include="StaticData\static_Roles.sql" />
-    <Build Include="Tables\Allergies\Allergies.sql" />
-    <Build Include="Tables\Allergies\AllergySymptom.sql" />
-    <Build Include="Tables\Allergies\PatientAllergy.sql" />
-    <Build Include="Tables\Allergies\Symptoms.sql" />
-    <None Include="StaticData\static_Allergies.sql" />
-    <None Include="StaticData\static_AllergySymptom.sql" />
-    <None Include="StaticData\static_PatientAllergy.sql" />
-    <None Include="StaticData\static_Symptoms.sql" />
-    <Build Include="Tables\Medications\Medications.sql" />
-    <Build Include="Tables\Medications\PatientMedications.sql" />
     <Build Include="Views\DoctorsView.sql" />
     <Build Include="Tables\Users\Roles.sql" />
     <Build Include="Tables\Users\Secrets.sql" />
@@ -95,11 +78,8 @@
     <Build Include="Tables\Users\UsersData.sql" />
     <Build Include="Tables\Users\UsersLogin.sql" />
     <None Include="StaticData\static_Secrets.sql" />
-    <None Include="StaticData\static_UserLogin.sql" />
+    <None Include="StaticData\static_Logins.sql" />
     <None Include="StaticData\static_UsersData.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="StaticData\static_Images.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\PostDeployment.sql" />
