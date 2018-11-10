@@ -5,7 +5,10 @@ IF ( NOT EXISTS(SELECT *
   BEGIN
       INSERT INTO [dbo].[Roles]
                   ([Title])
-      VALUES      ('Test');
+      VALUES      ('Admin');
+      INSERT INTO [dbo].[Roles]
+                  ([Title])
+      VALUES      ('Doctor');
   END
 
 GO
