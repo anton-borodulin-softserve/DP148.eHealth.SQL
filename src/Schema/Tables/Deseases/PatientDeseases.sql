@@ -10,8 +10,7 @@
 	[IsDeleted] BIT NOT NULL DEFAULT 0,
 
 	CONSTRAINT PK_PatientDiseases PRIMARY KEY CLUSTERED ( [PatientDiseaseId] ),
-	--TODO: Uncomment foreign key on PatientInfo table
-	--CONSTRAINT FK_PatientDiseases_PatientInfo FOREIGN KEY ( [PatientId] ) REFERENCES [dbo].[PatientInfo]( [PatientId] ),
+	CONSTRAINT FK_PatientDiseases_PatientInfo FOREIGN KEY ( [PatientId] ) REFERENCES [dbo].[PatientInfo]( [PatientId] ),
 	CONSTRAINT FK_PatientDiseases_Diseases FOREIGN KEY ( [DiseaseId] ) REFERENCES [dbo].[Diseases]( [DiseaseId] ),
 	CONSTRAINT UC_PatientDisease UNIQUE ( [PatientId], [DiseaseId], [StartDate] ),
 	CONSTRAINT CHK_DiseaseEndDate CHECK ( ( [EndDate] >= [StartDate] ) OR ( [EndDate] IS NULL ) )
