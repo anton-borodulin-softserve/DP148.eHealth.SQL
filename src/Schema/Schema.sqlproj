@@ -64,10 +64,18 @@
     <Folder Include="SchemaConversion" />
     <Folder Include="Scripts" />
     <Folder Include="Tables\Users" />
+    <Folder Include="Tables\Deseases" />
+	<Folder Include="Tables\Patient" />
+	<Folder Include="Tables\Allergies" />
+	<Folder Include="Tables\Medications" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SchemaConversion\ClientSchemaConversion.sql" />
     <None Include="StaticData\static_Sessions.sql" />
+    <None Include="StaticData\static_DiseaseCategories.sql" />
+    <None Include="StaticData\static_Diseases.sql" />
+    <None Include="StaticData\static_PatientDiseases.sql" />
+    <None Include="StaticData\static_PatientInfo.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="StaticData\static_Roles.sql" />
@@ -80,6 +88,22 @@
     <None Include="StaticData\static_Secrets.sql" />
     <None Include="StaticData\static_Logins.sql" />
     <None Include="StaticData\static_UsersData.sql" />
+    <Build Include="Tables\Deseases\PatientDeseases.sql" />
+    <Build Include="Tables\Deseases\Diseases.sql" />
+    <Build Include="Tables\Deseases\DiseaseCategories.sql" />
+    <Build Include="Tables\Allergies\Allergies.sql" />
+    <Build Include="Tables\Allergies\AllergySymptom.sql" />
+    <Build Include="Tables\Allergies\PatientAllergy.sql" />
+    <Build Include="Tables\Allergies\Symptoms.sql" />
+    <None Include="StaticData\static_Allergies.sql" />
+    <None Include="StaticData\static_AllergySymptom.sql" />
+    <None Include="StaticData\static_PatientAllergy.sql" />
+    <None Include="StaticData\static_Symptoms.sql" />
+	<Build Include="Tables\Medications\Medications.sql" />
+    <Build Include="Tables\Medications\PatientMedications.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="StaticData\static_Images.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\PostDeployment.sql" />
