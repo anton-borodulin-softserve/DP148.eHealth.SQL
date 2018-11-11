@@ -21,8 +21,4 @@
 :r ..\StaticData\static_UsersData.sql
 :r ..\StaticData\static_Sessions.sql
 :r ..\StaticData\static_Appointments.sql
-:r ..\StaticData\static_AppointmentsBill.sql
-
-
-
-
+:r ..\StaticData\static_AppointmentBills.sql
