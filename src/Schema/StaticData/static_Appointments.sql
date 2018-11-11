@@ -5,7 +5,7 @@ IF ( NOT EXISTS(SELECT *
   BEGIN
       INSERT INTO [dbo].[Appointments]
                   ([PatientId], [UserId], [AppointmentTime])
-      VALUES      (1, 1, '00:00:00')
+      VALUES      (1, 1, '00:00:00');
   END
 
 GO

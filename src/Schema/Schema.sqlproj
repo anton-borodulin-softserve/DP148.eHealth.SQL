@@ -68,6 +68,7 @@
     <Folder Include="Tables\Allergies" />
     <Folder Include="Tables\Medications" />
     <Folder Include="Tables\Users" />
+    <Folder Include="Tables\Appointments" />
   </ItemGroup>
   <ItemGroup>
     <None Include="StaticData\static_Medications.sql" />
@@ -105,6 +106,10 @@
     <None Include="StaticData\static_Logins.sql" />
     <None Include="StaticData\static_Sessions.sql" />
     <None Include="StaticData\static_UsersData.sql" />
+    <None Include="StaticData\static_AppointmentBills.sql" />
+    <None Include="StaticData\static_Appointments.sql" />
+    <Build Include="Tables\Appointments\AppointmentBills.sql" />
+    <Build Include="Tables\Appointments\Appointments.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="StaticData\static_Images.sql" />
