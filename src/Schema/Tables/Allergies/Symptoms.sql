@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Symptoms] 
 (
-    [Id] INT NOT NULL IDENTITY, 
+    [SymptomId] INT NOT NULL IDENTITY, 
     [Naming] NVARCHAR(200) NOT NULL, 
     [IsDeleted] BIT NOT NULL DEFAULT 0
     
