@@ -5,7 +5,7 @@
     [AllergyId] INT NOT NULL, 
     [Duration] NVARCHAR(25) NULL, 
     [Notes] NVARCHAR(500) NULL, 
-    [IsDeleted] BIT NOT NULL, 
+    [IsDeleted] BIT NOT NULL DEFAULT 0 
 
     CONSTRAINT PK_PatientAllergy PRIMARY KEY ( [PatientAllergyId] ),
     CONSTRAINT FK_PatientAllergy_Allergies FOREIGN KEY ( [AllergyId] ) REFERENCES Allergies( [AllergyId] ),
