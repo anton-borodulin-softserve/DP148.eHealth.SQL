@@ -9,6 +9,9 @@ IF ( NOT EXISTS(SELECT *
       INSERT INTO [dbo].[Sessions]
                   ([UserId], [Token], [ExpiredDate])
       VALUES      (2, NEWID(), GETDATE());
+      INSERT INTO [dbo].[Sessions]
+                  ([UserId], [Token], [ExpiredDate])
+      VALUES      (3, NEWID(), GETDATE());
   END
 
 GO

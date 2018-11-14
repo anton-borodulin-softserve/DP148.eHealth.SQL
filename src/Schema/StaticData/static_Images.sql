@@ -5,7 +5,11 @@ IF (NOT EXISTS(SELECT *
   BEGIN
       INSERT INTO [dbo].[Images]
 				  (ImageName)
-	  VALUES      ('TestImageName1')
+	  VALUES      ('James_Bond.jpg'),
+				  ('Ivy_Young.jpg'),
+				  ('Melissa_Brown.jpg'),
+				  ('John_Smith.jpg'),
+				  ('Kevin_McBribe.jpg');
   END
 
 GO

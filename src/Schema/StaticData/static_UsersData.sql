@@ -46,7 +46,7 @@ BEGIN
         (
             '2',
             'Katerina',
-            'Vasiliovna',
+            'Bilik',
              '1997-08-08',
             '380975635612',
             'Ukraine',
@@ -54,6 +54,32 @@ BEGIN
             'Dmytra Yavornytskoho Avenue, 23',
             0,
             'kate@gmail.com'
+        );
+        INSERT INTO [dbo].[UsersData]
+        (
+            UserId,
+            FirstName,
+            LastName,
+            BirthDate,
+            PhoneNumber,
+            Country,
+            City,
+            Adress,
+            Gender,
+            Email
+        )
+        VALUES
+        (
+            '3',
+            'Svetlana',
+            'Palamachuk',
+             '1989-08-08',
+            '380975635777',
+            'Ukraine',
+            'Kiev',
+            'Shevchenko street, 08',
+            0,
+            'svetpal@gmail.com'
         )
 END
 

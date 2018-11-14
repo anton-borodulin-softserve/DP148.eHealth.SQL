@@ -9,6 +9,9 @@ IF ( NOT EXISTS(SELECT *
       INSERT INTO [dbo].[Roles]
                   ([Title])
       VALUES      ('Doctor');
+      INSERT INTO [dbo].[Roles]
+                  ([Title])
+      VALUES      ('Nurse');
   END
 
 GO
