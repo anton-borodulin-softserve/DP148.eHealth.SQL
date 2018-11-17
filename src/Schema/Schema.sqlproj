@@ -72,8 +72,8 @@
     <Folder Include="Stored Procedures" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="StaticData\static_Medications.sql" />
-    <None Include="StaticData\static_PatientMediacations.sql" />
+    <None Include="StaticData\static_Drugs.sql" />
+    <None Include="StaticData\static_Prescriptions.sql" />
     <None Include="SchemaConversion\ClientSchemaConversion.sql" />
     <None Include="StaticData\static_DiseaseCategories.sql" />
     <None Include="StaticData\static_Diseases.sql" />
@@ -95,8 +95,8 @@
     <None Include="StaticData\static_AllergySymptoms.sql" />
     <None Include="StaticData\static_PatientAllergies.sql" />
     <None Include="StaticData\static_Symptoms.sql" />
-    <Build Include="Tables\Medications\Medications.sql" />
-    <Build Include="Tables\Medications\PatientMedications.sql" />
+    <Build Include="Tables\Medications\Drugs.sql" />
+    <Build Include="Tables\Medications\Prescriptions.sql" />
     <Build Include="Tables\Users\Roles.sql" />
     <Build Include="Tables\Users\Secrets.sql" />
     <Build Include="Tables\Users\Sessions.sql" />

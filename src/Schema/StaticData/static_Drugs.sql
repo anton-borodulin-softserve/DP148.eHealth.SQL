@@ -1,4 +1,4 @@
-﻿--Insert static data in Medications table.
+﻿--Insert static data in Drugs table.
 
 IF ( NOT EXISTS(SELECT *
                 FROM   [dbo].[Drugs]) )

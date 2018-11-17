@@ -10,8 +10,8 @@
 :r ..\StaticData\static_Symptoms.sql
 :r ..\StaticData\static_PatientAllergies.sql
 :r ..\StaticData\static_AllergySymptoms.sql
-:r ..\StaticData\static_Medications.sql
-:r ..\StaticData\static_PatientMediacations.sql
+:r ..\StaticData\static_Drugs.sql
+:r ..\StaticData\static_Prescriptions.sql
 :r ..\StaticData\static_DiseaseCategories.sql
 :r ..\StaticData\static_Diseases.sql
 :r ..\StaticData\static_PatientDiseases.sql
