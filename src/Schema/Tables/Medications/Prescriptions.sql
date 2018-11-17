@@ -5,7 +5,7 @@
     [UserId]               INT NOT NULL,
     [MedicationId]         BIGINT NOT NULL,
     [AssignmentDate]       DATE NOT NULL DEFAULT GETDATE(),
-    [Duration]             NVARCHAR(20) NOT NULL,
+    [Duration]             SMALLINT NOT NULL,
     [Notes]                NVARCHAR(MAX) NULL,
     [IsFinished]           BIT NOT NULL DEFAULT 0,
     [IsDeleted]            BIT NOT NULL DEFAULT 0
