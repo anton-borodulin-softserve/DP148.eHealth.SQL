@@ -108,7 +108,7 @@
     <Build Include="Tables\Users\Secrets.sql" />
     <Build Include="Tables\Users\Sessions.sql" />
     <Build Include="Tables\Users\UsersData.sql" />
-    <Build Include="Tables\Users\UsersLogin.sql" />
+    <Build Include="Tables\Users\Logins.sql" />
     <Build Include="Tables\Appointments\AppointmentBills.sql" />
     <Build Include="Tables\Appointments\Appointments.sql" />
     <None Include="StaticData\Medications\static_Drugs.sql" />

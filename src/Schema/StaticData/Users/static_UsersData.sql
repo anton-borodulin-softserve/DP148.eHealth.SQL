@@ -5,7 +5,7 @@ IF ( NOT EXISTS(SELECT *
 BEGIN
     INSERT INTO [dbo].[UsersData]
         (
-            UserId,
+            [Id],
             FirstName,
             LastName,
             BirthDate,
@@ -31,7 +31,7 @@ BEGIN
         );
         INSERT INTO [dbo].[UsersData]
         (
-            UserId,
+            [Id],
             FirstName,
             LastName,
             BirthDate,
@@ -57,7 +57,7 @@ BEGIN
         );
         INSERT INTO [dbo].[UsersData]
         (
-            UserId,
+            [Id],
             FirstName,
             LastName,
             BirthDate,

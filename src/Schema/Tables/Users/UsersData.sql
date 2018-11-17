@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[UsersData]
 (
-    [UserId]      INT NOT NULL,
+    [Id]          INT NOT NULL,
     [FirstName]   NVARCHAR(100) NOT NULL,
     [LastName]    NVARCHAR(100) NOT NULL,
     [BirthDate]   DATE NOT NULL,
@@ -12,8 +12,8 @@
     [Email]       VARCHAR(50) NULL,
     [IsDeleted]   BIT NOT NULL DEFAULT 0
 
-    CONSTRAINT PK_UsersData PRIMARY KEY CLUSTERED ( [UserId] ),
-    CONSTRAINT FK_UsersData_Logins FOREIGN KEY ( [UserId] ) REFERENCES [dbo].[Logins]( [LoginId] ),
+    CONSTRAINT PK_UsersData PRIMARY KEY CLUSTERED ( [Id] ),
+    CONSTRAINT FK_UsersData_Logins FOREIGN KEY ( [Id] ) REFERENCES [dbo].[Logins]( [Id] ),
     CONSTRAINT UC_UsersEmail UNIQUE( [Email] ),
     CONSTRAINT UC_User UNIQUE([FirstName], [LastName], [BirthDate]) 
 )
