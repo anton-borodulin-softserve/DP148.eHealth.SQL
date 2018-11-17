@@ -4,21 +4,21 @@
  Scripts will run according to th order in this file!
 */
 
-:r ..\StaticData\static_Images.sql
-:r ..\StaticData\static_PatientInfo.sql
-:r ..\StaticData\static_Allergies.sql
-:r ..\StaticData\static_Symptoms.sql
-:r ..\StaticData\static_PatientAllergies.sql
-:r ..\StaticData\static_AllergySymptoms.sql
-:r ..\StaticData\static_Drugs.sql
-:r ..\StaticData\static_Prescriptions.sql
-:r ..\StaticData\static_DiseaseCategories.sql
-:r ..\StaticData\static_Diseases.sql
-:r ..\StaticData\static_PatientDiseases.sql
-:r ..\StaticData\static_Roles.sql
-:r ..\StaticData\static_Logins.sql
-:r ..\StaticData\static_Secrets.sql
-:r ..\StaticData\static_UsersData.sql
-:r ..\StaticData\static_Sessions.sql
-:r ..\StaticData\static_Appointments.sql
-:r ..\StaticData\static_AppointmentBills.sql
+:r ..\StaticData\Patient\static_Images.sql
+:r ..\StaticData\Patient\static_PatientInfo.sql
+:r ..\StaticData\Allergies\static_Allergies.sql
+:r ..\StaticData\Allergies\static_Symptoms.sql
+:r ..\StaticData\Allergies\static_PatientAllergies.sql
+:r ..\StaticData\Allergies\static_AllergySymptoms.sql
+:r ..\StaticData\Medications\static_Drugs.sql
+:r ..\StaticData\Medications\static_Prescriptions.sql
+:r ..\StaticData\Diseases\static_DiseaseCategories.sql
+:r ..\StaticData\Diseases\static_Diseases.sql
+:r ..\StaticData\Diseases\static_PatientDiseases.sql
+:r ..\StaticData\Users\static_Roles.sql
+:r ..\StaticData\Users\static_Logins.sql
+:r ..\StaticData\Users\static_Secrets.sql
+:r ..\StaticData\Users\static_UsersData.sql
+:r ..\StaticData\Users\static_Sessions.sql
+:r ..\StaticData\Appointments\static_Appointments.sql
+:r ..\StaticData\Appointments\static_AppointmentBills.sql
