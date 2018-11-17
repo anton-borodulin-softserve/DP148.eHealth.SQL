@@ -1,6 +1,6 @@
-﻿CREATE TABLE [dbo].[Medications]
+﻿CREATE TABLE [dbo].[Drugs]
 (
-    [MedicationId]      BIGINT NOT NULL IDENTITY(1, 1),
+    [DrugId]      BIGINT NOT NULL IDENTITY(1, 1),
     [InternationalName] NVARCHAR(50) NOT NULL,
     [Type]              NVARCHAR(50) NOT NULL,
     [Dose]              FLOAT NOT NULL,
@@ -9,7 +9,7 @@
     [Instruction]       NVARCHAR(MAX) NOT NULL,
     [IsDeleted]         BIT NOT NULL DEFAULT 0,
 
-    CONSTRAINT PK_Medications PRIMARY KEY CLUSTERED ( [MedicationId] ),
+    CONSTRAINT PK_Medications PRIMARY KEY CLUSTERED ( [DrugId] ),
     CONSTRAINT UC_Medications UNIQUE ( [InternationalName], [Type], [Dose], [DoseUnit]),
     CONSTRAINT CHK_MedicationsDose CHECK ( [Dose] > 0)
 )

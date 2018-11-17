@@ -12,5 +12,5 @@
 
     CONSTRAINT PK_PatientMedications PRIMARY KEY CLUSTERED ( [PatientMedicationsId] ),
     CONSTRAINT FK_PatientMedications_PatientsInfo FOREIGN KEY ( [PatientId] ) REFERENCES [dbo].[PatientInfo]( [PatientId] ),
-    CONSTRAINT FK_PatientMedications_Medications FOREIGN KEY ( [MedicationId] ) REFERENCES [dbo].[Medications]( [MedicationId] )
+    CONSTRAINT FK_PatientMedications_Medications FOREIGN KEY ( [MedicationId] ) REFERENCES [dbo].[Drugs]( [DrugId] )
 )
