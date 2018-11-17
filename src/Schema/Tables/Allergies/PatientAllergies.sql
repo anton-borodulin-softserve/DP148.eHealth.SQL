@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[PatientAllergy] 
+﻿CREATE TABLE [dbo].[PatientAllergies] 
 (
     [PatientAllergyId] INT NOT NULL IDENTITY, 
     [PatientId] INT NOT NULL, 

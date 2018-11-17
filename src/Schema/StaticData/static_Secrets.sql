@@ -9,6 +9,9 @@ IF ( NOT EXISTS(SELECT *
       INSERT INTO [dbo].[Secrets]
                   ([UserId], [Password])
       VALUES      (2, '654321');
+      INSERT INTO [dbo].[Secrets]
+                  ([UserId], [Password])
+      VALUES      (3, '192837');
   END
 
 GO

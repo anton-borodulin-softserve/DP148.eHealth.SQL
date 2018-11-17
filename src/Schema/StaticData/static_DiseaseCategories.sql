@@ -5,7 +5,10 @@ IF ( NOT EXISTS(SELECT *
   BEGIN
       INSERT INTO [dbo].[DiseaseCategories]
                   ([Name])
-      VALUES      ('Test disease category');
+      VALUES      ('Throat');
+	  INSERT INTO [dbo].[DiseaseCategories]
+                  ([Name])
+      VALUES      ('Nose');
   END
 
 GO
