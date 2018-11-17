@@ -5,19 +5,19 @@ IF ( NOT EXISTS(SELECT *
   BEGIN
       INSERT INTO [dbo].[Diseases]
                   ([Name], [CategoryId], [Description])
-      VALUES      ('Test Disease Name', 1, 'test disease description');
+      VALUES      ('Tonsillitis', 1, 'Tonsillitis description.');
 	  INSERT INTO [dbo].[Diseases]
                   ([Name], [CategoryId], [Description])
-      VALUES      ('Test Disease Name2', 2, 'test disease description2');
+      VALUES      ('Rhinitis', 2, 'Rhinitis description.');
 	  INSERT INTO [dbo].[Diseases]
                   ([Name], [CategoryId], [Description])
-      VALUES      ('Test Disease Name3', 2, 'test disease description2');
+      VALUES      ('Sinusitis', 2, 'Sinusitis description.');
 	  INSERT INTO [dbo].[Diseases]
                   ([Name], [CategoryId], [Description])
-      VALUES      ('Test Disease Name4', 2, 'test disease description2');
+      VALUES      ('Laryngitis', 1, 'Laryngitis description.');
 	  INSERT INTO [dbo].[Diseases]
                   ([Name], [CategoryId], [Description])
-      VALUES      ('Test Disease Name5', 1, 'test disease description2');
+      VALUES      ('Upper respiratory tract infection', 1, 'URTI description.');
   END
 
 GO
