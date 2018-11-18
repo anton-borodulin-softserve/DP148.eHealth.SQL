@@ -6,15 +6,15 @@ BEGIN
     INSERT INTO [dbo].[UsersData]
         (
             [Id],
-            FirstName,
-            LastName,
-            BirthDate,
-            PhoneNumber,
-            Country,
-            City,
-            Adress,
-            Gender,
-            Email
+            [FirstName],
+            [LastName],
+            [BirthDate],
+            [PhoneNumber],
+            [Country],
+            [City],
+            [Adress],
+            [Gender],
+            [Email]
         )
         VALUES
         (
@@ -32,15 +32,15 @@ BEGIN
         INSERT INTO [dbo].[UsersData]
         (
             [Id],
-            FirstName,
-            LastName,
-            BirthDate,
-            PhoneNumber,
-            Country,
-            City,
-            Adress,
-            Gender,
-            Email
+            [FirstName],
+            [LastName],
+            [BirthDate],
+            [PhoneNumber],
+            [Country],
+            [City],
+            [Adress],
+            [Gender],
+            [Email]
         )
         VALUES
         (
@@ -58,15 +58,15 @@ BEGIN
         INSERT INTO [dbo].[UsersData]
         (
             [Id],
-            FirstName,
-            LastName,
-            BirthDate,
-            PhoneNumber,
-            Country,
-            City,
-            Adress,
-            Gender,
-            Email
+            [FirstName],
+            [LastName],
+            [BirthDate],
+            [PhoneNumber],
+            [Country],
+            [City],
+            [Adress],
+            [Gender],
+            [Email]
         )
         VALUES
         (

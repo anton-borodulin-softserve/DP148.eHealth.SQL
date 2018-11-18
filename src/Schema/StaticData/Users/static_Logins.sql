@@ -5,13 +5,13 @@ IF ( NOT EXISTS(SELECT *
   BEGIN
       INSERT INTO [dbo].[Logins]
                   ([Login], [RoleId])
-      VALUES      ('admin1', 1);
+      VALUES      ('ivan@gmail.com', 1);
       INSERT INTO [dbo].[Logins]
                   ([Login], [RoleId])
-      VALUES      ('doctor1', 2);
+      VALUES      ('kate@gmail.com', 2);
       INSERT INTO [dbo].[Logins]
                   ([Login], [RoleId])
-      VALUES      ('nurse1', 3);
+      VALUES      ('svetpal@gmail.com', 3);
   END 
 
 GO
