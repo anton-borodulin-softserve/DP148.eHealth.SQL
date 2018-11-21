@@ -2,7 +2,7 @@
 (
     [Id]          INT NOT NULL IDENTITY(1, 1),
     [UserId]      INT NOT NULL,
-    [Token]       VARCHAR(255) NOT NULL,
+    [Token]       VARCHAR(450) NOT NULL,
     [ExpiredDate] DATETIME NOT NULL
 
     CONSTRAINT PK_Sessions PRIMARY KEY CLUSTERED ( [Id] ),
