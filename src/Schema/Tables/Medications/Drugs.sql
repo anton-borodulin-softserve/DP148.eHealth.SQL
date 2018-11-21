@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Drugs]
 (
-    [Id]          BIGINT NOT NULL IDENTITY(1, 1),
+    [Id]          INT NOT NULL IDENTITY(1, 1),
     [Name]        NVARCHAR(50) NOT NULL,
     [Type]        NVARCHAR(50) NOT NULL,
     [Dose]        FLOAT NOT NULL,

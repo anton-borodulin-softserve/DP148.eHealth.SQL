@@ -1,9 +1,9 @@
 ﻿CREATE TABLE [dbo].[Prescriptions]
 (
-    [Id]             BIGINT NOT NULL IDENTITY(1, 1),
+    [Id]             INT NOT NULL IDENTITY(1, 1),
     [PatientId]      INT NOT NULL,
     [UserId]         INT NOT NULL,
-    [DrugId]         BIGINT NOT NULL,
+    [DrugId]         INT NOT NULL,
     [AssignmentDate] DATE NOT NULL DEFAULT GETDATE(),
     [Duration]       SMALLINT NOT NULL,
     [Notes]          NVARCHAR(MAX) NULL,
