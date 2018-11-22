@@ -91,6 +91,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="SchemaConversion\ClientSchemaConversion.sql" />
+    <Build Include="Stored Procedures\Diseases\CascadeDeletePatientDisease.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Patient\Images.sql" />
