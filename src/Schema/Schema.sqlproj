@@ -132,6 +132,8 @@
     <None Include="StaticData\Appointments\static_Appointments.sql" />
     <Build Include="Stored Procedures\Allergies\CascadeDeletePatientAllergy.sql" />
     <Build Include="Views\Users\DoctorsView.sql" />
+    <Build Include="Stored Procedures\Medications\UpdateStatusAuthomaticallyPrescription.sql" />
+    <Build Include="Stored Procedures\Medications\UpdateStatusManuallyPrescription.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\PostDeployment.sql" />
