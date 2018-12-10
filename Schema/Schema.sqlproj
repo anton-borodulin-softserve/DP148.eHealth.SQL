@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>Schema</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{de183312-8f1e-4c5e-8b20-0c60ce2e7057}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>Schema</RootNamespace>
+    <AssemblyName>Schema</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="StaticData" />
+    <Folder Include="Tables" />
+    <Folder Include="Triggers" />
+    <Folder Include="Views" />
+    <Folder Include="SchemaConversion" />
+    <Folder Include="Scripts" />
+    <Folder Include="Tables\Diseases" />
+    <Folder Include="Tables\Patient" />
+    <Folder Include="Tables\Allergies" />
+    <Folder Include="Tables\Medications" />
+    <Folder Include="Tables\Users" />
+    <Folder Include="Tables\Appointments" />
+    <Folder Include="Stored Procedures" />
+    <Folder Include="StaticData\Allergies" />
+    <Folder Include="StaticData\Appointments" />
+    <Folder Include="StaticData\Diseases" />
+    <Folder Include="StaticData\Medications" />
+    <Folder Include="StaticData\Patient" />
+    <Folder Include="StaticData\Users" />
+    <Folder Include="Stored Procedures\Allergies" />
+    <Folder Include="Stored Procedures\Appointments" />
+    <Folder Include="Stored Procedures\Diseases" />
+    <Folder Include="Stored Procedures\Medications" />
+    <Folder Include="Stored Procedures\Users" />
+    <Folder Include="Stored Procedures\Patient" />
+    <Folder Include="Views\Allergies" />
+    <Folder Include="Views\Appointments" />
+    <Folder Include="Views\Diseases" />
+    <Folder Include="Views\Medications" />
+    <Folder Include="Views\Patient" />
+    <Folder Include="Views\Users" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SchemaConversion\ClientSchemaConversion.sql" />
+    <Build Include="Stored Procedures\Diseases\CascadeDeletePatientDisease.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\Patient\Images.sql" />
+    <Build Include="Tables\Patient\PatientInfo.sql" />
+    <Build Include="Tables\Diseases\PatientDiseases.sql" />
+    <Build Include="Tables\Diseases\Diseases.sql" />
+    <Build Include="Tables\Diseases\DiseaseCategories.sql" />
+    <Build Include="Tables\Allergies\Allergies.sql" />
+    <Build Include="Tables\Allergies\AllergySymptoms.sql" />
+    <Build Include="Tables\Allergies\PatientAllergies.sql" />
+    <Build Include="Tables\Allergies\Symptoms.sql" />
+    <Build Include="Tables\Medications\Drugs.sql" />
+    <Build Include="Tables\Medications\Prescriptions.sql" />
+    <Build Include="Tables\Users\Roles.sql" />
+    <Build Include="Tables\Users\Secrets.sql" />
+    <Build Include="Tables\Users\Sessions.sql" />
+    <Build Include="Tables\Users\UsersData.sql" />
+    <Build Include="Tables\Users\Logins.sql" />
+    <Build Include="Tables\Appointments\AppointmentBills.sql" />
+    <Build Include="Tables\Appointments\Appointments.sql" />
+    <None Include="StaticData\Medications\static_Drugs.sql" />
+    <None Include="StaticData\Medications\static_Prescriptions.sql" />
+    <None Include="StaticData\Users\static_UsersData.sql" />
+    <None Include="StaticData\Users\static_Sessions.sql" />
+    <None Include="StaticData\Users\static_Secrets.sql" />
+    <None Include="StaticData\Users\static_Roles.sql" />
+    <None Include="StaticData\Users\static_Logins.sql" />
+    <None Include="StaticData\Patient\static_Images.sql" />
+    <None Include="StaticData\Patient\static_PatientInfo.sql" />
+    <None Include="StaticData\Diseases\static_Diseases.sql" />
+    <None Include="StaticData\Diseases\static_DiseaseCategories.sql" />
+    <None Include="StaticData\Diseases\static_PatientDiseases.sql" />
+    <None Include="StaticData\Allergies\static_Allergies.sql" />
+    <None Include="StaticData\Allergies\static_AllergySymptoms.sql" />
+    <None Include="StaticData\Allergies\static_Symptoms.sql" />
+    <None Include="StaticData\Allergies\static_PatientAllergies.sql" />
+    <None Include="StaticData\Appointments\static_AppointmentBills.sql" />
+    <None Include="StaticData\Appointments\static_Appointments.sql" />
+    <Build Include="Stored Procedures\Allergies\CascadeDeletePatientAllergy.sql" />
+    <Build Include="Views\Users\DoctorsView.sql" />
+    <Build Include="Stored Procedures\Medications\UpdateStatusAuthomaticallyPrescription.sql" />
+    <Build Include="Stored Procedures\Medications\UpdateStatusManuallyPrescription.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\PostDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Schema.refactorlog" />
+  </ItemGroup>
+</Project>
